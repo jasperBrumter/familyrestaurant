@@ -1,0 +1,123 @@
+<div class="navbar">
+	<div class="navmenu">
+		<div class="navmenuoption"><h1>About</h1></div>
+		<div class="navmenuoption"><h1>Menu</h1></div>
+		<div class="navmenuoption"><h1>Reservations</h1></div>
+	</div>
+</div>
+<div class="defile">
+	
+</div>
+<div class="container">
+	<div class="halfsection image1">
+	
+	</div>
+	<div class="halfsection">
+		<div class="text">
+			<h2>Welcome to restaurant.</h2>
+			<p>Opened in 2012, fwbfph eadnj ndn apdejaq lak lkasdjk. Ifwbfph eadnj ndn apdejaq lak lkasdjk. Qfwbfph eadnj ndn apdejaq lak lkasdjk.</p>
+		</div>
+	</div>
+</div>
+<div class="defile">
+	
+</div>
+	<div class="slideshow">
+		<div class="slides">
+			<div class="slide">
+				<h1>Entrees</h1><br><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+			</div>
+			<div class="slide">
+				<h1>Plats principaux</h1><br><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+			</div>
+			<div class="slide">
+				<h1>Desserts</h1><br><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+			</div>
+			<div class="slide">
+				<h1>Carte des vins</h1><br><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+				<h2>Salade du midi - $ 10</h2>
+				<p>Tomates, mozzarella di buffala, basilic frais, huile d'olive grecque</p><br>
+			</div>
+		</div>
+	</div>
+
+<div class="defile">
+	
+</div>
+
+<div class="container">
+	<div class="halfsection">
+		<div class="text">
+			<h2>Contact	</h2>
+			<p>Opened in 2012, fwbfph eadnj ndn apdejaq lak lkasdjk. Ifwbfph eadnj ndn apdejaq lak lkasdjk. Qfwbfph eadnj ndn apdejaq lak lkasdjk.</p>
+		</div>
+	</div>
+	<div class="halfsection image1">
+	
+	</div>
+</div>	
+
+<script>
+
+	    var slideshow = document.querySelector(".slideshow")
+
+        var allSlides = document.querySelectorAll(".slide");
+
+        var slideWindow = document.querySelector(".slides")
+	slideWindow.addEventListener("click",(e) => {
+        var windowWidth = window.innerWidth;
+        var fullWidth = slideWindow.scrollWidth;
+        if (e["screenX"] > (windowWidth/2) && slideWindow.scrollLeft % window.innerWidth == 0) {
+
+          if (slideWindow.scrollLeft + window.innerWidth == fullWidth) {
+            slideWindow.scroll(-fullWidth,0);
+          }
+          else {
+            slideWindow.scroll(slideWindow.scrollLeft + fullWidth/(allSlides.length), 0);
+          }
+        }
+        else if (slideWindow.scrollLeft % window.innerWidth == 0) {
+          if (slideWindow.scrollLeft == 0) {
+            slideWindow.scroll(fullWidth,0);
+          }
+          else {
+            slideWindow.scroll(slideWindow.scrollLeft - fullWidth/(allSlides.length), 0);
+          }
+        }
+      })
+
+</script>
